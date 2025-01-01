@@ -1,0 +1,15 @@
+<h2>Регистрация</h2>
+<form (ngSubmit)="onSubmit()">
+  <div>
+    <label for="email">Email:</label>
+    <input type="email" [(ngModel)]="user.email" name="email" id="email" required>
+  </div>
+  <div>
+    <label for="password">Пароль:</label>
+    <input type="password" [(ngModel)]="user.password" name="password" id="password" required>
+  </div>
+  <button type="submit">Зарегистрироваться</button>
+</form>
+<p>
+  Уже есть аккаунт? <a routerLink="/login">Войдите</a>
+</p>
